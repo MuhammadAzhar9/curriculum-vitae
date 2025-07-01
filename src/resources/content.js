@@ -1,27 +1,16 @@
 import { Logo } from "@once-ui-system/core";
 
 const person = {
-  firstName: "Selene",
-  lastName: "Yu",
+  firstName: "Muhammad Azharuddin",
+  lastName: "Hamid",
   get name() {
     return `${this.firstName} ${this.lastName}`;
   },
-  role: "Design Engineer",
-  avatar: "/images/avatar.jpg",
-  email: "example@gmail.com",
+  role: "Informatics Engineer",
+  avatar: "/images/avatar.png",
+  email: "muhammadazharuddinhamid@gmail.com",
   location: "Asia/Jakarta", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
   languages: ["English", "Bahasa"], // optional: Leave the array empty if you don't want to display languages
-};
-
-const newsletter = {
-  display: true,
-  title: <>Subscribe to {person.firstName}'s Newsletter</>,
-  description: (
-    <>
-      I occasionally write about design, technology, and share thoughts on the intersection of
-      creativity and engineering.
-    </>
-  ),
 };
 
 const social = [
@@ -30,17 +19,12 @@ const social = [
   {
     name: "GitHub",
     icon: "github",
-    link: "https://github.com/once-ui-system/nextjs-starter",
+    link: "https://github.com/MuhammadAzhar9",
   },
   {
     name: "LinkedIn",
     icon: "linkedin",
-    link: "https://www.linkedin.com/company/once-ui/",
-  },
-  {
-    name: "Threads",
-    icon: "threads",
-    link: "https://www.threads.com/@once_ui",
+    link: "https://www.linkedin.com/in/muhammad-azharuddin-hamid/",
   },
   {
     name: "Email",
@@ -55,16 +39,11 @@ const home = {
   label: "Home",
   title: `${person.name}'s Portfolio`,
   description: `Portfolio website showcasing my work as a ${person.role}`,
-  headline: <>Building bridges between design and code</>,
-  featured: {
-    display: true,
-    title: <>Recent project: <strong className="ml-4">Once UI</strong></>,
-    href: "/work/building-once-ui-a-customizable-design-system",
-  },
+  headline: <>Bukan tentang seberapa cepat kamu sampai, tapi seberapa jauh kamu mau melangkah.</>,
   subline: (
     <>
-      I'm Selene, a design engineer at <Logo icon="/trademarks/wordmark-dark.svg" style={{ display: "inline-flex", top: "0.25em", marginLeft: "-0.25em" }}/>, where I craft intuitive
-      <br /> user experiences. After hours, I build my own projects.
+      Saya Azhar mahasiswa Teknik Informatika di Politeknik Negeri Bandung yang tertarik dengan
+      <strong> pengembangan perangkat lunak</strong>.
     </>
   ),
 };
@@ -87,22 +66,100 @@ const about = {
   },
   intro: {
     display: true,
-    title: "Introduction",
+    title: "Perkenalan",
     description: (
       <>
-        Selene is a Jakarta-based design engineer with a passion for transforming complex challenges
-        into simple, elegant design solutions. Her work spans digital interfaces, interactive
-        experiences, and the convergence of design and technology.
+        Mahasiswa Teknik Informatika yang termotivasi dengan keahlian kuat dalam pengembangan perangkat lunak. 
+        Berpengalaman sebagai anggota tim inti dalam proyek pengembangan sistem informasi kampus yang berhasil diimplementasikan. 
+        Siap berkontribusi secara signifikan sebagai Junior Developer dan memperdalam keahlian di lingkungan profesional yang dinamis.
       </>
     ),
   },
-  work: {
+  personaldata: {
     display: true, // set to false to hide this section
-    title: "Work Experience",
+    title: "Biodata Pribadi",
+    institutions: [
+      {
+        name: "Nama Lengkap",
+        description: <>Muhammad Azharuddin Hamid</>,
+      },
+      {
+        name: "Nama Panggilan",
+        description: <>Azhar</>,
+      },
+      {
+        name: "Alamat",
+        description: <>Jln. Barokah II No.24 RT 01/RW 016 Kel. Perwira, Kec. Bekasi Utara, Kota Bekasi</>,
+      },
+      {
+        name: "Nomer Telepon/HP",
+        description: <>085882565983</>,
+      },
+      {
+        name: "Email",
+        description: <>muhammad.azharuddin.tif422@polban.ac.id</>,
+      },
+      {
+        name: "Jenis Kelamin",
+        description: <>Laki-laki</>,
+      },
+      {
+        name: "Tempat, Tanggal Lahir",
+        description: <>Bekasi, 27 September 2003</>,
+      },
+      {
+        name: "Agama",
+        description: <>Islam</>,
+      },
+      {
+        name: "Status",
+        description: <>Mahasiswa / Belum Kawin</>,
+      },
+      {
+        name: "Kewarganegaraan",
+        description: <>Warga Negara Indonesia (WNI)</>,
+      },
+    ],
+  },
+  education: {
+    display: true, // set to false to hide this section
+    title: "Jenjang Pendidikan",
     experiences: [
       {
-        company: "FLY",
-        timeframe: "2022 - Present",
+        institution: "Politeknik Negeri Bandung",
+        timeframe: "2022 - Sekarang ",
+        role: "Jurusan Teknik Informatika",
+        achievements: [],
+        images: [],
+      },
+      {
+        institution: "SMK Negeri 1 Kota Bekasi",
+        timeframe: "2019 - 2022 ",
+        role: "Jurusan Teknik Komputer dan Jaringan",
+        achievements: [],
+        images: [],
+      },
+      {
+        institution: "SMP Negeri 5 Kota Bekasi",
+        timeframe: "2016 - 2019 ",
+        achievements: [],
+        images: [],
+      },
+      {
+        institution: "SD Negeri Perwira III ",
+        timeframe: "2010 - 2016",
+        achievements: [],
+        images: [],
+      },
+    ],
+  },
+  organization: {
+    display: true, // set to false to hide this section
+    title: "Pengalaman Organisasi",
+    experiences: [
+      {
+        company: "SD Negeri Perwira III ",
+        timeframe: "2010 - 2016",
         role: "Senior Design Engineer",
         achievements: [
           <>
@@ -139,20 +196,6 @@ const about = {
           </>,
         ],
         images: [],
-      },
-    ],
-  },
-  studies: {
-    display: true, // set to false to hide this section
-    title: "Studies",
-    institutions: [
-      {
-        name: "University of Jakarta",
-        description: <>Studied software engineering.</>,
-      },
-      {
-        name: "Build the Future",
-        description: <>Studied online marketing and personal branding.</>,
       },
     ],
   },
@@ -196,73 +239,15 @@ const about = {
   },
 };
 
-const blog = {
-  path: "/blog",
-  label: "Blog",
-  title: "Writing about design and tech...",
-  description: `Read what ${person.name} has been up to recently`,
-  // Create new blog posts by adding a new .mdx file to app/blog/posts
-  // All posts will be listed on the /blog route
-};
-
 const work = {
-  path: "/work",
-  label: "Work",
+  path: "/portofolio",
+  label: "Portofolio",
   title: `Projects – ${person.name}`,
   description: `Design and dev projects by ${person.name}`,
   // Create new project pages by adding a new .mdx file to app/blog/posts
-  // All projects will be listed on the /home and /work routes
+  // All projects will be listed on the /home and /portofolio routes
 };
 
-const gallery = {
-  path: "/gallery",
-  label: "Gallery",
-  title: `Photo gallery – ${person.name}`,
-  description: `A photo collection by ${person.name}`,
-  // Images by https://lorant.one
-  // These are placeholder images, replace with your own
-  images: [
-    {
-      src: "/images/gallery/horizontal-1.jpg",
-      alt: "image",
-      orientation: "horizontal",
-    },
-    {
-      src: "/images/gallery/horizontal-2.jpg",
-      alt: "image",
-      orientation: "horizontal",
-    },
-    {
-      src: "/images/gallery/horizontal-3.jpg",
-      alt: "image",
-      orientation: "horizontal",
-    },
-    {
-      src: "/images/gallery/horizontal-4.jpg",
-      alt: "image",
-      orientation: "horizontal",
-    },
-    {
-      src: "/images/gallery/vertical-1.jpg",
-      alt: "image",
-      orientation: "vertical",
-    },
-    {
-      src: "/images/gallery/vertical-2.jpg",
-      alt: "image",
-      orientation: "vertical",
-    },
-    {
-      src: "/images/gallery/vertical-3.jpg",
-      alt: "image",
-      orientation: "vertical",
-    },
-    {
-      src: "/images/gallery/vertical-4.jpg",
-      alt: "image",
-      orientation: "vertical",
-    },
-  ],
-};
 
-export { person, social, newsletter, home, about, blog, work, gallery };
+
+export { person, social, home, about, work };
