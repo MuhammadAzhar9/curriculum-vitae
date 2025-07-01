@@ -69,7 +69,7 @@ const about = {
     title: "Perkenalan",
     description: (
       <>
-        Mahasiswa Teknik Informatika yang termotivasi dengan keahlian kuat dalam pengembangan perangkat lunak. 
+        Mahasiswa Teknik Informatika yang termotivasi dengan keahlian dalam pengembangan perangkat lunak. 
         Berpengalaman sebagai anggota tim inti dalam proyek pengembangan sistem informasi kampus yang berhasil diimplementasikan. 
         Siap berkontribusi secara signifikan sebagai Junior Developer dan memperdalam keahlian di lingkungan profesional yang dinamis.
       </>
@@ -163,25 +163,58 @@ const about = {
         role: "Staf Muda Komisi 3 Pengawasan",
         achievements: [
           <>
-            Redesigned the UI/UX for the FLY platform, resulting in a 20% increase in user
-            engagement and 30% faster load times.
-          </>,
-          <>
-            Spearheaded the integration of AI tools into design workflows, enabling designers to
-            iterate 50% faster.
+            Melakukan pengawasan terhadap kinerja dari Badan Eksekutif Mahasiswa Politeknik Negeri Bandung agar sesuai dengan
+            peraturan yang berlaku. 
           </>,
         ],
         images: [
-          // optional: leave the array empty if you don't want to display images
           {
-            src: "/images/projects/project-01/cover-01.jpg",
-            alt: "Once UI Project",
+            src: "/images/organization/staffmuda-mpm.png",
+            alt: "Sertifikat Staff Muda MPM",
             width: 16,
             height: 9,
           },
         ],
       },
+      {
+        organization: "Majelis Perwakilan Anggota (MPA) Himpunan Mahasiswa Komputer Politeknik Negeri Bandung",
+        timeframe: "2022 - 2023",
+        role: "Staf Muda Komisi Pengawasan",
+        achievements: [
+          <>
+            Melakukan pengawasan terhadap kinerja dari Badan Eksekutif Himpunan Mahasiswa Komputer Politeknik Negeri Bandung agar sesuai dengan
+            peraturan yang berlaku.
+          </>,
 
+        ],
+        images: [],
+      },
+      {
+        organization: "Majelis Perwakilan Mahasiswa (MPM) Politeknik Negeri Bandung",
+        timeframe: "2022 - 2023",
+        role: "Wakil Ketua Komisi 3 Pengawasan",
+        achievements: [
+          <>
+            Melakukan koordinasi kepada anggota Komisi 3 Pengawasan MPM Politeknik Negeri Bandung dalam 
+            melakukan pengawasan terhadap kinerja dari Badan Eksekutif Mahasiswa Politeknik Negeri Bandung agar sesuai dengan
+            peraturan yang berlaku. 
+          </>,
+        ],
+        images: [
+          {
+            src: "/images/organization/staffahli-mpm.jpg",
+            alt: "Sertifikat Staff Muda MPM",
+            width: 16,
+            height: 9,
+          },
+          {
+            src: "/images/organization/foto-studio.jpg",
+            alt: "Sertifikat Staff Muda MPM",
+            width: 16,
+            height: 9,
+          },
+        ],
+      },
     ],
   },
   technical: {
