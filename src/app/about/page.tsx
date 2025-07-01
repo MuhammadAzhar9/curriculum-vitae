@@ -45,6 +45,11 @@ export default function About() {
       items: about.education.experiences.map((experience) => experience.institution),
     },
     {
+      title: about.organizationalExperience.title,
+      display: about.organizationalExperience.display,
+      items: about.organizationalExperience.experiences.map((experience) => experience.organization),
+    },
+    {
       title: about.technical.title,
       display: about.technical.display,
       items: about.technical.skills.map((skill) => skill.title),
@@ -243,17 +248,17 @@ export default function About() {
             </>
           )}
 
-          {about.organization.display && (
+          {about.organizationalExperience.display && (
             <>
-              <Heading as="h2" id={about.organization.title} variant="display-strong-s" marginBottom="m">
-                {about.organization.title}
+              <Heading as="h2" id={about.organizationalExperience.title} variant="display-strong-s" marginBottom="m">
+                {about.organizationalExperience.title}
               </Heading>
               <Column fillWidth gap="l" marginBottom="40">
-                {about.organization.experiences.map((experience, index) => (
-                  <Column key={`${experience.company}-${experience.role}-${index}`} fillWidth>
+                {about.organizationalExperience.experiences.map((experience, index) => (
+                  <Column key={`${experience.organization}-${experience.role}-${index}`} fillWidth>
                     <Flex fillWidth horizontal="space-between" vertical="end">
-                      <Text id={experience.company} variant="heading-strong-l">
-                        {experience.company}
+                      <Text id={experience.organization} variant="heading-strong-l">
+                        {experience.organization}
                       </Text>
                       <Text variant="heading-default-xs" onBackground="neutral-weak">
                         {experience.timeframe}
@@ -267,7 +272,7 @@ export default function About() {
                         <Text
                           as="li"
                           variant="body-default-m"
-                          key={`${experience.company}-${index}`}
+                          key={`${experience.organization}-${index}`}
                         >
                           {achievement}
                         </Text>

@@ -153,14 +153,14 @@ const about = {
       },
     ],
   },
-  organization: {
+  organizationalExperience: {
     display: true, // set to false to hide this section
     title: "Pengalaman Organisasi",
     experiences: [
       {
-        company: "SD Negeri Perwira III ",
-        timeframe: "2010 - 2016",
-        role: "Senior Design Engineer",
+        organization: "Majelis Perwakilan Mahasiswa (MPM) Politeknik Negeri Bandung",
+        timeframe: "2022 - 2023",
+        role: "Staf Muda Komisi 3 Pengawasan",
         achievements: [
           <>
             Redesigned the UI/UX for the FLY platform, resulting in a 20% increase in user
@@ -181,22 +181,7 @@ const about = {
           },
         ],
       },
-      {
-        company: "Creativ3",
-        timeframe: "2018 - 2022",
-        role: "Lead Designer",
-        achievements: [
-          <>
-            Developed a design system that unified the brand across multiple platforms, improving
-            design consistency by 40%.
-          </>,
-          <>
-            Led a cross-functional team to launch a new product line, contributing to a 15% increase
-            in overall company revenue.
-          </>,
-        ],
-        images: [],
-      },
+
     ],
   },
   technical: {
@@ -239,7 +224,7 @@ const about = {
   },
 };
 
-const work = {
+const portofolio = {
   path: "/portofolio",
   label: "Portofolio",
   title: `Projects – ${person.name}`,
@@ -250,4 +235,4 @@ const work = {
 
 
 
-export { person, social, home, about, work };
+export { person, social, home, about, portofolio };
