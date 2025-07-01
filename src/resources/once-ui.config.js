@@ -17,9 +17,9 @@ const display = {
 
 // Enable password protection on selected routes
 // Set password in the .env file, refer to .env.example
-// const protectedRoutes = {
-//   "/portofolio/movie-review-app-project": true,
-// };
+const protectedRoutes = {
+  "/portofolio/movie-review-app-project": false,
+};
 
 // Import and set font for each variant
 import { Geist } from "next/font/google";
@@ -185,4 +185,4 @@ const sameAs = {
   discord: "https://discord.com/invite/5EyAQ4eNdS",
 };
 
-export { display, mailchimp, routes, baseURL, fonts, style, schema, sameAs, effects, dataStyle };
+export { display, mailchimp, routes, protectedRoutes, baseURL, fonts, style, schema, sameAs, effects, dataStyle };
