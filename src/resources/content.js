@@ -219,39 +219,61 @@ const about = {
   },
   technical: {
     display: true, // set to false to hide this section
-    title: "Technical skills",
+    title: "Technical Skills",
     skills: [
       {
-        title: "Figma",
-        description: <>Able to prototype in Figma with Once UI with unnatural speed.</>,
-        // optional: leave the array empty if you don't want to display images
-        images: [
-          {
-            src: "/images/projects/project-01/cover-02.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-          {
-            src: "/images/projects/project-01/cover-03.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-        ],
+        title: "JavaScript",
+        description: <>Berpengalaman dalam pengembangan aplikasi web dengan JavaScript modern.</>,
+        percentage: 85,
+        images: [],
+      },
+      {
+        title: "PHP",
+        description: <>Mengembangkan aplikasi web backend dengan PHP dan framework Laravel.</>,
+        percentage: 70,
+        images: [],
+      },
+      {
+        title: "React.js",
+        description: <>Membangun user interface interaktif dengan React dan ecosystem-nya.</>,
+        percentage: 75,
+        images: [],
       },
       {
         title: "Next.js",
-        description: <>Building next gen apps with Next.js + Once UI + Supabase.</>,
-        // optional: leave the array empty if you don't want to display images
-        images: [
-          {
-            src: "/images/projects/project-01/cover-04.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-        ],
+        description: <>Mengembangkan aplikasi full-stack dengan Next.js dan server-side rendering.</>,
+        percentage: 70,
+        images: [],
+      },
+      {
+        title: "MySQL",
+        description: <>Database design dan query optimization menggunakan MySQL.</>,
+        percentage: 80,
+        images: [],
+      },
+      {
+        title: "Git & GitHub",
+        description: <>Version control dan kolaborasi tim menggunakan Git dan GitHub.</>,
+        percentage: 85,
+        images: [],
+      },
+      {
+        title: "HTML & CSS",
+        description: <>Markup dan styling untuk pengembangan web frontend yang responsif.</>,
+        percentage: 90,
+        images: [],
+      },
+      {
+        title: "Bootstrap",
+        description: <>Framework CSS untuk pengembangan UI yang cepat dan responsif.</>,
+        percentage: 85,
+        images: [],
+      },
+      {
+        title: "Figma",
+        description: <>UI/UX design dan prototyping untuk aplikasi web dan mobile.</>,
+        percentage: 75,
+        images: [],
       },
     ],
   },
@@ -260,7 +282,7 @@ const about = {
 const portofolio = {
   path: "/portofolio",
   label: "Portofolio",
-  title: `Projects – ${person.name}`,
+  title: `Projects - ${person.name}`,
   description: `Design and dev projects by ${person.name}`,
   // Create new project pages by adding a new .mdx file to app/blog/posts
   // All projects will be listed on the /home and /portofolio routes

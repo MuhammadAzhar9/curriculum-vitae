@@ -1,0 +1,81 @@
+---
+title: "Sistem Pemantauan Tugas Akhir Mahasiswa"
+publishedAt: "2025-06-23"
+summary: "Sistem Informasi yang memantau tugas akhir mahasiswa menggunakan framework Laravel dan menggunakan template AdminLTE."
+images:
+  - "/images/projects/sipta-login.png"
+  - "/images/projects/sipta-github.png"
+team:
+  - name: "Muhammad Azharuddin Hamid"
+    role: "Developer"
+    avatar: "/images/avatar.png"
+    linkedIn: "https://www.linkedin.com/in/muhammad-azharuddin-hamid/"
+  - name: "Mahasiswa JTK22"
+    role: "Developer"
+    icon: user
+  - name: "Mahasiswa JTK22"
+    role: "Quality Assurance"
+    icon: user
+  - name: "Mahasiswa JTK22"
+    role: "Integrator"
+    icon: user
+link: "https://polban-space.cloudias79.com/sipta/login"
+---
+
+## Overview
+
+Sistem Informasi yang memantau tugas akhir mahasiswa menggunakan framework Laravel dan menggunakan template AdminLTE. Menggunakan Laravel Observer untuk logging dan Laravel Fortify untuk autentikasi.
+
+## Key Features
+
+### 1. Pengajuan & Alokasi Pembimbing
+Fokus pada otomatisasi proses penentuan dan penunjukan pembimbing.
+- **Ketersediaan Dosen Membimbing**: Dosen dapat mengelola dan menginformasikan kuota serta kesediaan mereka untuk membimbing Tugas Akhir.
+- **Pengajuan Pembimbing oleh Mahasiswa**: Mahasiswa dapat mengajukan pilihan pembimbing yang diinginkan berdasarkan topik dan ketersediaan.
+- **Alokasi Pembimbing**: Sistem akan memfasilitasi proses alokasi pembimbing, mempertimbangkan preferensi mahasiswa dan ketersediaan/keahlian dosen.
+
+### 2. Perencanaan dan Pelaksanaan Seminar & Sidang Tugas Akhir
+Memastikan kelancaran proses penjadwalan dan persetujuan ujian akhir.
+- **Penjadwalan Seminar 3 dan Sidang (IS)**: Mengelola jadwal seminar pra-sidang (Seminar 3) dan Sidang Akhir secara otomatis, menghindari bentrokan jadwal.
+- **Persetujuan Seminar 3 dan Sidang (Pengganti FTA) (RA)**: Memfasilitasi proses persetujuan resmi untuk pelaksanaan Seminar 3 dan Sidang, termasuk pengganti Formulir Tugas Akhir (FTA) oleh pihak terkait (RA).
+
+### 3. Pengelolaan dan Penjadwalan Ruangan
+Memastikan ketersediaan dan efisiensi penggunaan fasilitas untuk kegiatan akademik.
+- **Kelola Penjadwalan Ruangan**: Memungkinkan manajemen ruangan untuk berbagai kegiatan akademik, termasuk seminar dan sidang, untuk menghindari bentrokan dan memaksimalkan pemanfaatan aset.
+
+### 4. Pengelolaan Penilaian Tugas Akhir
+Memudahkan pencatatan dan rekapitulasi nilai.
+- **Pencatatan Nilai Seminar, Sidang, dan Penilaian Akhir**: Mengakomodasi input dan penyimpanan nilai dari berbagai tahapan, mulai dari seminar, sidang, hingga penilaian akhir Tugas Akhir.
+
+### 5. Plagiarism Checking
+Mengintegrasikan alat untuk memastikan orisinalitas karya ilmiah.
+- **Plagiarism Checking**: Fitur untuk melakukan pemeriksaan plagiarisme pada dokumen Tugas Akhir, mendukung integritas akademik.
+
+### 6. Repositori Tugas Akhir
+Menjadi pusat penyimpanan terpusat untuk karya-karya Tugas Akhir.
+- **Poster**: Menyimpan poster-poster Tugas Akhir sebagai ringkasan visual.
+- **Laporan TA**: Menyimpan versi final dari laporan Tugas Akhir.
+
+### 7. User Management
+Mengelola hak akses dan peran pengguna dalam sistem.
+- **Manajemen Pengguna**: Mengelola akun pengguna (mahasiswa, dosen, admin) beserta peran dan hak akses masing-masing.
+
+### 8. Notifikasi dan Pengingat
+Memberikan informasi dan pengingat otomatis kepada pengguna.
+- **Notifikasi dan Pengingat**: Mengirimkan notifikasi dan pengingat otomatis terkait *deadline*, jadwal, atau status proses kepada mahasiswa dan dosen.
+
+## Technologies Used
+
+* **Documentation of AdminLTE Template Usage**: Memberikan **panduan lengkap** untuk menggunakan dan menerapkan *template* AdminLTE, memastikan pengembangan antarmuka admin yang konsisten dan efisien.
+* **Spatie Response Cache**: Meningkatkan **performa aplikasi** dengan menyimpan (*caching*) respons HTTP, mengurangi beban *server* dan mempercepat waktu muat halaman untuk pengalaman pengguna yang lebih baik.
+* **Logging**: Fitur penting untuk **mencatat berbagai aktivitas dan *event*** dalam aplikasi, krusial untuk *debugging*, pemantauan kinerja, dan audit keamanan.
+* **Laravel Observer**: Memungkinkan Anda **memantau *event* model** di Laravel (misalnya, saat data dibuat, diperbarui, atau atau dihapus), memicu logika bisnis atau tindakan otomatis berdasarkan perubahan tersebut.
+* **Laravel Fortify**: Menyediakan **layanan autentikasi *backend*** yang tangguh dan *headless* di Laravel, mendukung fitur inti seperti registrasi pengguna, *login*, verifikasi email, dan *reset password* tanpa perlu membangun UI autentikasi dari nol.
+
+## Challenges and Learnings
+
+Tantangan yang dihadapi adalah permintaan user yang sering berubah dan harus berkomunikasi dengan seluruh kelompok untuk mengintegrasi setiap fitur.
+
+## Outcome
+
+Sistem berhasil di gunakan untuk memantau tugas akhir mahasiswa.

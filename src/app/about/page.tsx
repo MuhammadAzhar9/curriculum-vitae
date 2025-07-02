@@ -327,6 +327,34 @@ export default function About() {
                     <Text variant="body-default-m" onBackground="neutral-weak">
                       {skill.description}
                     </Text>
+                    {skill.percentage && (
+                      <Column fillWidth gap="8">
+                        <Flex fillWidth vertical="center" horizontal="space-between">
+                          <Text variant="body-default-s" onBackground="neutral-weak">
+                            Tingkat Keahlian
+                          </Text>
+                          <Text variant="body-default-s" onBackground="neutral-weak">
+                            {skill.percentage}%
+                          </Text>
+                        </Flex>
+                        <Flex 
+                          fillWidth 
+                          style={{ height: '8px' }}
+                          background="neutral-alpha-medium" 
+                          radius="full"
+                        >
+                          <Flex 
+                            style={{ 
+                              height: '8px',
+                              width: `${skill.percentage}%`,
+                              transition: 'width 0.8s ease-in-out',
+                              background: 'linear-gradient(90deg, #3b82f6, #06b6d4)'
+                            }}
+                            radius="full"
+                          />
+                        </Flex>
+                      </Column>
+                    )}
                     {skill.images && skill.images.length > 0 && (
                       <Flex fillWidth paddingTop="m" gap="12" wrap>
                         {skill.images.map((image, index) => (
